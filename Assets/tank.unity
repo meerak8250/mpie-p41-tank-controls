@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 2145188242028120497}
   - component: {fileID: 3056509019639334420}
   - component: {fileID: 976737460206809822}
+  - component: {fileID: 3056509019639334421}
   m_Layer: 0
   m_Name: turret
   m_TagString: Untagged
@@ -503,6 +504,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625498180988572427}
   m_Mesh: {fileID: 2165579551946672802, guid: 968602c72de4c40978033fc3435a5dfc, type: 3}
+--- !u!114 &3056509019639334421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625498180988572427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608d8fdc1a75f4d15b6706abb0ebfa50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 50
 --- !u!23 &5544631138047200475
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -559,6 +573,8 @@ GameObject:
   - component: {fileID: 6681459999006291892}
   - component: {fileID: 7716508863109756945}
   - component: {fileID: 5544631138047200475}
+  - component: {fileID: 7716508863109756946}
+  - component: {fileID: 7716508863109756947}
   m_Layer: 0
   m_Name: hull
   m_TagString: Untagged
@@ -590,6 +606,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6337269275957406990}
   m_Mesh: {fileID: -8317559295149232154, guid: 2a291da6430eb4434bc2739e4581f768, type: 3}
+--- !u!114 &7716508863109756946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6337269275957406990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aab6b8af6d7c415cb9cc90e679d0fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+--- !u!114 &7716508863109756947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6337269275957406990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d9d943ed8f54752978f4594b457706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  turnSpeed: 30
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
